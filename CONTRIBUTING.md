@@ -31,7 +31,6 @@ Before you start contributing, it's crucial to understand how to use the JSON sc
   "grant_program_guide": "String: URL of the grant program guide",
   "further_funding_opportunities": "String: Description of further funding opportunities",
   "public_contact_email": "String: Public email for contacting the grant program",
-  "your_telegram_handle": "String: Telegram handle of the person submitting the information"
 }
 ```
 
