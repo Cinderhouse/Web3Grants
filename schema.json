@@ -48,12 +48,12 @@
       "items": {
         "type": "string",
         "enum": [
-          "Development (Idea or MVP Stage)",
+          "Development (Idea or MVP)",
           "Integration (Existing project w/ traction/users)",
           "Growth or GTM",
           "Marketing or Community Building",
-          "Technical Content, Tutorials, and Education",
-          "Non-Technical Content and Education",
+          "Technical Content, Tutorials, or Education",
+          "Non-Technical Content or Education",
           "NFTs and Digital Art",
           "Gaming",
           "Governance and DAOs",
