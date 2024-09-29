@@ -220,6 +220,6 @@ Key points to remember:
 ## Getting Help
 
 - **Issues**: If you're unsure about something, feel free to open an issue.
-- **Contact**: Reach out via email at contact@web3grants.org for direct assistance.
+- **Contact**: Reach out on [Web3 Grants](https://web3grants.fyi) for direct assistance.
 
 Your contributions make a difference! Thank you for helping [Web3 Grants](https://web3grants.fyi) grow the Web3 ecosystem.
