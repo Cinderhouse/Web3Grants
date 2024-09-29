@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "organization_name": {
+      "type": "string",
+      "description": "A single line of text representing the organization name for the organization who manages or offers the grant program. For example, Ethereum Foundation, Solana Foundation, Web3 Foundation etc."
+    },
+    "grant_program_name": {
+      "type": "string",
+      "description": "A single line of text representing the grant program name. If the grant program name is the same as the organization_name, then this field can be left blank."
+    },
+    "grant_program_description": {
+      "type": "string",
+      "description": "Long-form text describing the grant program in detail. This will be the main body of information that readers will consume to understand what the grant program is, does, and how it works."
+    },
+    "max_grant_size": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The maximum grant size the grant program offers stated in USD. Even if the grant program only offers grants in native token or other currencies, state the USD equivalent. There is an opportunity in the type_of_funds_granted field to specify the actual currency type(s) your program provides. (Positive numbers only)."
+    },
+    "average_grant_size": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The average grant size the grant program offers stated in USD. Even if the grant program only offers grants in native token or other currencies, state the USD equivalent. There is an opportunity in the type_of_funds_granted field to specify the actual currency type(s) your program provides. (Positive numbers only)."
+    },
+    "grant_type": {
+      "type": "string",
+      "enum": [
+        "Equity-free grants",
+        "Recoverable or Equity based Grants",
+        "Both Equity-free and Equity based grants",
+        "Other"
+      ],
+      "description": "State the type of grant offered by letting readers know whether the grant is equity-free or equity-based."
+    },
+    "type_of_funds_granted": {
+      "type": "string",
+      "enum": [
+        "Native Token Grants Only",
+        "Native Token or Stablecoin/Fiat Grants",
+        "Stablecoin or Fiat Grants Only"
+      ],
+      "description": "The type of funds granted by the program."
+    },
+    "project_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Development (Idea or MVP Stage)",
+          "Integration (Existing project w/ traction/users)",
+          "Growth or GTM",
+          "Marketing or Community Building",
+          "Technical Content, Tutorials, and Education",
+          "Non-Technical Content and Education",
+          "NFTs and Digital Art",
+          "Gaming",
+          "Governance and DAOs",
+          "Academic or R&D",
+          "Other"
+        ]
+      },
+      "description": "Types of projects invited to apply for the grant. This should be an Array of comma-separated strings that list only the enums for all project_types that are welcomed to apply. For example, ['Development (Idea or MVP Stage)', 'Integration (Existing project w/ traction/users)', 'Gaming, Other']"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date",
+      "description": "The application deadline in UTC date format (YYYY-MM-DD)."
+    },
+    "other_requirements": {
+      "type": "string",
+      "description": "A long-form description of any additional requirements or information about the grant program."
+    },
+    "where_to_apply": {
+      "type": "string",
+      "format": "uri",
+      "description": "A valid URL where applicants can apply for a grant."
+    },
+    "marketing_networking_technical_community_support": {
+      "type": "string",
+      "description": "Long-form information about other types of support your grant program or ecosystem provides to grantees such as Marketing, Networking, Technical, and/or Community Support."
+    },
+    "additional_resources": {
+      "type": "string",
+      "description": "Additional resources or information provided by the grant program to the grantee such as tools, platforms, exclusive events etc. For example, partnerships with Google or AWS web3 cloud programs where grantees can get $(n) of cloud credits, discounts on auditing services, discounts on SaaS products etc."
+    },
+    "grant_program_guide": {
+      "type": "string",
+      "format": "uri",
+      "description": "A valid URL for your grant program guide or help resource."
+    },
+    "further_funding_opportunities": {
+      "type": "string",
+      "description": "Long-form description about any further funding opportunities beyond the initial grant. e.g., Ecosystem funds, Accelerator programs, VC connections, etc."
+    },
+    "public_contact_email": {
+      "type": "string",
+      "format": "email",
+      "description": "A valid email address for the public to be able to use in order to contact your grants program."
+    }
+  },
+  "required": [
+    "organization_name",
+    "grant_program_description",
+    "listing_type",
+    "max_grant_size",
+    "average_grant_size",
+    "grant_type",
+    "type_of_funds_granted",
+    "project_types",
+    "where_to_apply"
+  ]
+}
